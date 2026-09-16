@@ -1,5 +1,4 @@
 # This is a user-defined module
-
 def addMethod(a, b):
     return a + b
 
