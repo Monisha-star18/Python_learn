@@ -1,3 +1,4 @@
+"""
 class A :
     def func1 (self):
         print("func 1 works")
@@ -47,3 +48,31 @@ obj4 = E()
 obj4.func6()
 obj4.func7()
 
+"""
+
+#init and super method with inheritance
+
+# all class in python are chile class  
+#by default they inherit a object class 
+
+class A :
+    def __init__(self):
+        print("init in A ")
+        
+    def func1(self):
+        print("func1 works")
+
+class B(A) :
+    def __init__(self):
+        #to call the parent class __init__ user super()
+        super().__init__()
+        print("init in B ")
+        
+    def func2(self):
+        # to call a function from the parent class either use super or self 
+        super().func1() 
+        self.func1()
+        print("func2 works")
+
+obj1 = B()
+obj1.func2()
