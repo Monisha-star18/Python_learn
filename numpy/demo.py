@@ -20,7 +20,7 @@ arr2= np.array([[ ['A','B','C'], ['D','E','F'], ['G','H','I']],
 #shape 
 # print(arr2.shape)
 
-#chain indexing 
+#chain indexing 3 
 # print(arr2[1][0][1])
 # print(arr2[2][1][2])
 
@@ -124,6 +124,6 @@ rng.shuffle(arrayOriginal)
 
 print(arrayOriginal)
 
-#take one random number 
+#take one random number    
 option = rng.choice(arrayOriginal , size =(3,2))
 print(option)
